@@ -11,6 +11,6 @@ app.use(responseTime());
 
 app.use('/api/barberos', barberosApi);
 
-app.listen(4100);   
+app.listen(3000);   
 
-console.log('escuchando en el puerto 4100')
+console.log('escuchando en el puerto 3000')
