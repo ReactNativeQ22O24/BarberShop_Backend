@@ -1,14 +1,19 @@
-const pgp = require ('pg-promise');
+import pg from 'pg-promise'
+const pgp= pg();
 
-const USER= 'admin';
-const PASS='lMVCbuEPVBaQTTnJXdZPCN2FkZfNyaf2';
-const HOST='dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com';
-const DATABASE='barbershop';
+import dotenv from 'dotenv'
+dotenv.config();
 
-const conexionSql= `postgressql://${USER}:${PASS}@${HOST}:5432/${DATABASE}`;
+const user= process.env.USER;
+const pass= process.env.PASS;
+const host= process.env.HOST;
+const database= process.env.DATABASE;
+
+const conexionSql= `postgressql://${user}:${pass}@${host}:5432/${database}?ssl=true`;
 
 const db = pgp(conexionSql);
-db.conect()
+
+db.connect()
     .then(()=>{
 
         console.log('conexiòn Exitosa!')
@@ -16,3 +21,5 @@ db.conect()
     .catch((err)=>{
         console.log(`Error de conexiòn: ${err}`)
     });
+
+export {db};

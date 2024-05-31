@@ -1,4 +1,4 @@
--- Active: 1716780961750@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
+-- Active: 1716828292252@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
 
 CREATE TABLE ROLE(
  id SERIAL PRIMARY KEY,

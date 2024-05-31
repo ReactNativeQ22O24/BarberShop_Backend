@@ -2,15 +2,22 @@
   "name": "barbershop_backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "pg": "^8.11.5",
-    "pg-promise": "^11.7.7"
+    "pg-promise": "^11.7.7",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
   }
 }
