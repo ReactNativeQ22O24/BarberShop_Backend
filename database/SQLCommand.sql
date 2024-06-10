@@ -1,8 +1,8 @@
 SELECT * FROM role;
 
 insert into
-    usuarios (correo, pass, role_asignado)
-values (
+    usuarios (id, correo, pass, rol_asignado)
+values (0801200012345,
         'effs777@unitec.edu',
         'Hola1',
         2
