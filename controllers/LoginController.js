@@ -10,12 +10,11 @@ const getLogin = async (req, res) => {
         .json({ error: "Los campos 'Usuario' y 'Contrasena' son requeridos." });
     }
     const params = [Usuario, Contrasena];
-
     const sql = `SELECT COUNT(1) as isValid FROM usuarios WHERE correo = $1 AND pass = $2`;
 
     const result = await db.query(sql, params);
 
-    if (result[0].isValid >= "1") {
+    if (result[0].isvalid >= "1") {
       res.status(200).json({ success: true, message: "Bienvenido." });
     } else {
       res

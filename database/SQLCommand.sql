@@ -9,3 +9,9 @@ values (
     );
 
 SELECT * FROM usuarios;
+
+SELECT COUNT(1) as isValid
+FROM usuarios
+WHERE
+    correo = 'effs777@unitec.edu'
+    AND pass = 'Hola1';
