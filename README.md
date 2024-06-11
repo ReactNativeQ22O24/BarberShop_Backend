@@ -5,7 +5,7 @@ Barber shop es una app movil multiplataforma para agendar citas entre Barberos y
 el proyecto utiliza la conexion a la BD que esta alojada en la nube en https://render.com/ para su conexión estara mas abajo en la sección de instrucciones.
 
 ## Tabla de contenido:
-* [Descargas](#Descargas)
+* [Descargas](#descargas)
 * [instrucciones](#instrucciones)
 * [importante](#importante)
 * [Desarrolladores](#desarrolladores)
@@ -19,7 +19,7 @@ el proyecto utiliza la conexion a la BD que esta alojada en la nube en https://r
 para ejecutar este proyecto 
 1. descargue el proyecto en Git hub desktop o descarguelo como zip.
 2. abralo con un editor de texto como visual Studio Code.
-3. descargue las dependencias del poyecto, en la `consola de VSC ejecute.`
+3. descargue las dependencias del poyecto, en la `consola de VSC ejecute:`
 
 ```bash
 npm i
