@@ -1,4 +1,4 @@
--- Active: 1716828292252@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
+-- Active: 1716781773425@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
 
 CREATE TABLE ROLE (
     id SERIAL PRIMARY KEY,
@@ -6,19 +6,18 @@ CREATE TABLE ROLE (
 );
 
 CREATE TABLE usuarios (
-    id int PRIMARY KEY,
+    id SERIAL PRIMARY KEY ,
     correo VARCHAR(100) NOT NULL,
     pass VARCHAR(100) NOT NULL,
+    identificacion BIGINT,
     rol_asignado INT,
+    is_Active BOOLEAN DEFAULT true,
     CONSTRAINT rol_asignado FOREIGN KEY (rol_asignado) REFERENCES ROLE(id)
 );
 
 
-
 SELECT * FROM usuarios
 
-ALTER TABLE usuarios
-ALTER COLUMN identificacion VARCHAR(50) UNIQUE;
 
 Create table departamentos(
     id SERIAL PRIMARY key,
