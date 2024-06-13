@@ -12,4 +12,8 @@ const getbarberos= async(_, res)=>{
     }
 }
 
+const postBarberos = async(req, res)=>{
+    
+}
+
 export {getbarberos};
