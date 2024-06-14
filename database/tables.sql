@@ -78,3 +78,21 @@ insert into ciudad (nombre, id_departamento)
     ('Yoro',18);
 
 select * from ciudad
+
+
+
+
+create table barberos(
+    id SERIAL PRIMARY KEY,
+    nombre varchar(30)
+)
+
+create table agenda(
+    id SERIAL PRIMARY KEY,
+    fecha DATE,
+    tiempo TIME,
+    id_Barbero int,
+    Foreign Key (id_Barbero) REFERENCES barberos(id)
+)
+
+select * from agenda
