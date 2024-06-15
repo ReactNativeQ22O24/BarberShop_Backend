@@ -92,7 +92,19 @@ create table agenda(
     fecha DATE,
     tiempo TIME,
     id_Barbero int,
-    Foreign Key (id_Barbero) REFERENCES barberos(id)
+   CONSTRAINT id_Barbero Foreign Key (id_Barbero) REFERENCES barberos(id)
 )
 
+drop table agenda
+
 select * from agenda
+
+
+select * from barberos
+
+
+insert into barberos (nombre)
+VALUES ('Luis Cardona'),('Mario Murillo'),('Eduardo Flores');
+
+insert into agenda (fecha, tiempo, id_Barbero)
+values ('08-jan-2024', '08:13', 1);

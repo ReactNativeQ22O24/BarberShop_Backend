@@ -7,6 +7,7 @@ const app = Express();
 import { Login } from "./routes/apiLogin.js";
 import { barberosApi } from "./routes/BarberosRoutes.js";
 import { usuariosApi } from "./routes/UsuarioRoutes.js";
+import { agendaApi } from "./routes/agendaRoutes.js";
 
 app.use(responseTime());
 app.use(Express.json());
@@ -14,5 +15,7 @@ app.use(Express.json());
 app.use("/api/login", Login);
 app.use("/api/barberos", barberosApi);
 app.use("/api/registro", usuariosApi);
+app.use("/api/agenda", agendaApi);
+
 
 app.listen(3000);
