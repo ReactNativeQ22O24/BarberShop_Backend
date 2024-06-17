@@ -1,10 +1,12 @@
 import  Express  from "express";
 const agendaApi = Express();
 
-import { postAgenda, putAgenda } from "../controllers/agendaController.js";
+import { postAgenda, putAgenda, getAgenda } from "../controllers/agendaController.js";
 
-agendaApi.post('',postAgenda)
+agendaApi.post('',postAgenda);
 
-agendaApi.put('/:id', putAgenda )
+agendaApi.put('/:id', putAgenda);
+
+agendaApi.get('', getAgenda)
 
 export {agendaApi};
