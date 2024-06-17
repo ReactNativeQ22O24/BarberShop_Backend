@@ -1,7 +1,7 @@
 import {db} from '../database/conexion.js';
 
 const getbarberos= async(_, res)=>{
-    const querySQL =`SELECT * FROM ROLE`;
+    const querySQL =`SELECT * FROM barberos`;
 
     const result= await db.query(querySQL);
     
@@ -12,8 +12,5 @@ const getbarberos= async(_, res)=>{
     }
 }
 
-const postBarberos = async(req, res)=>{
-    
-}
 
 export {getbarberos};

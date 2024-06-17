@@ -1,4 +1,4 @@
--- Active: 1716781773425@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
+-- Active: 1716828292252@@dpg-cp9vucf109ks73afcgqg-a.oregon-postgres.render.com@5432@barbershop
 
 CREATE TABLE ROLE (
     id SERIAL PRIMARY KEY,
@@ -97,14 +97,18 @@ create table agenda(
 
 drop table agenda
 
-select * from agenda
+select * from agenda 
 
 
 select * from barberos
 
 
+
 insert into barberos (nombre)
 VALUES ('Luis Cardona'),('Mario Murillo'),('Eduardo Flores');
 
+
 insert into agenda (fecha, tiempo, id_Barbero)
 values ('08-jan-2024', '08:13', 1);
+
+UPDATE agenda SET fecha= '2024-01-09', tiempo= '09:00', id_Barbero=2 WHERE id=1;
