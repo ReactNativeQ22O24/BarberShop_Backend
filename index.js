@@ -13,7 +13,7 @@ app.use(responseTime());
 app.use(Express.json());
 
 app.use("/api/login", Login);
-app.use("/api/barber", barberosApi);
+app.use("/api/datos", barberosApi);
 app.use("/api/registro", usuariosApi);
 app.use("/api/agenda", agendaApi);
 
